@@ -7,9 +7,12 @@ import { useState } from 'react'
 function App() {
 
   const [searchText, setText] = useState("");
+  const [filteredBooks, setfilteredBooks] = useState(Books);
 
   function handleSearch() {
-    
+     const filterBooks = Books.filter((book) => book.title.toLowerCase().includes(searchText.toLowerCase()));
+
+    setfilteredBooks(filterBooks);
   }
 
   return (
@@ -21,7 +24,7 @@ function App() {
       <button onClick={handleSearch}>Search</button>
       </div>
     </div>
-     <BookList data={Books}/>
+     <BookList data={filteredBooks}/>
     </> 
   )
 }
