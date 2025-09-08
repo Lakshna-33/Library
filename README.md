@@ -1,12 +1,115 @@
-# React + Vite
+github link - https://github.com/Lakshna-33/Library.git
+ 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project title - Library
 
-Currently, two official plugins are available:
+Visitors can view the books, seacrch the books by book's title and category, add the books to the cart and remove the items from the cart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Components and Logic are listed below:-
 
-## Expanding the ESLint configuration
+1. Header
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Navigation bar with links:
+
+Welcome
+
+Home
+
+Browse Books
+
+Cart(cartlength)
+
+Used useSelector hook to subscribe to the store
+
+2. Welcome
+
+Landing page with a welcome message.
+
+
+3. WelcomePage
+
+Buttons to filter Fiction and Non-Fiction books.
+
+3. BookList
+
+Displays the list of books in card format.
+
+Each book links to its BookDetail page.
+
+4. BookDetails
+
+Displays full information of each book.
+
+Addtocart button to add books to Cart
+
+Used useDispatch hook to dispatch action from the store
+
+4. Book
+
+Single book card.
+
+Shows cover image, title, author, genre, description, and price.
+
+6. BrowseBooks
+
+Page to search and browse books.
+
+Includes a search input and category filters.
+
+Button to go back to the WelcomePage.
+
+7. CartPage
+
+Displays books added to the cart.
+
+Options:
+
+Remove a single book
+
+Clear the entire cart
+
+Go back to browse books
+
+8. AddBook
+
+Form for adding a new book.
+
+Used Redux to add the book to the main books list.
+
+Redirects to BrowseBooks after submission.
+
+9. PageNotFound
+
+Handles invalid routes (404 page).
+
+Shows the invalid route URL.
+
+Provides a link back to the Home page.
+
+10. style.css
+
+Includes styling for entire App
+
+11. Header.css
+
+Includes styling for Header
+
+12. WelcomePage.css
+
+Includes styling for WelcomePage
+
+13. App 
+
+Included Booklist component's filtered data and search field
+
+14. main
+
+Includes all routing informations and created appstore from redux
+
+15. appstore
+
+Configuring for the store 
+
+16. cartSlice
+
+Adding Slice and Reducer
