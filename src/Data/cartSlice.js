@@ -11,7 +11,7 @@ const cartSlice = createSlice({
         },
 
         removefromcart : (state,action) => {
-            const idToRemove = action.payload; // EXPECTS just the id (number/string)
+            const idToRemove = action.payload; // accepts only the id
       const index = state.items.findIndex((item) => item.id === idToRemove);
 
       if (index === -1) return; // nothing to remove
