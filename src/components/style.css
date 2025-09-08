@@ -4,64 +4,132 @@
     padding : 0;
 }
 
+.main-body {
+    background-color: pink;
+}
+
+.main2-body {
+    background-color: rgba(137, 43, 226, 0.432);
+    flex-direction: column;
+}
+.main3-body {
+    background-color: rgba(95, 158, 160, 0.582);
+}    
+.main4-body {
+    background-color: hsla(41, 100%, 54%, 0.589);
+}
+.book-list {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap : 20px;
+    padding: 20px;
+}
 .book-card {
     width : 250px;
-    height : 450px;
+    height : 350px;
     background-color : rgb(128, 128, 128);
-    margin : 20px;
-    display : flex;
-    flex-direction: column;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(1, 1, 1, 1);
-   
+    padding : 10px;
+    overflow:hidden;
+}    
+
+.bookdetail-card {
+    width: 100vh;              /* Take full width of screen */
+    min-height: 100vh;        /* At least full screen height */
+    background-color: rgba(65, 105, 225, 0.527);
+    margin: 0;                /* Remove side gaps */
+    padding: 20px;            /* Add inner spacing */
+    display: flex;            /* Flexbox for content arrangement */
+    flex-direction: column;   /* Stack content vertically */
+    justify-content: flex-start; 
+    align-items: flex-start;  
+    border-radius: 0;         /* Remove rounded corners */
+    box-shadow: none;         /* Remove card shadow */
+    overflow-y: auto;         /* Allow vertical scroll if content is too large */
 }
 
 .book-card:hover {
     transform : scale(1.1);
 }
 
+.book-main{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .book-image {
     width : 100%;
-    
-
+    height : 230px;
 }
 .book-title {
-    font-size : 2em;
-    margin-bottom : 10px;
+    margin-bottom : 5px;
     color : red;
 }
 
 .book-genre {
     font-size : 1em;
-    margin-bottom : 10px;
-    color : white;
+    margin-right : 5px;
+    color : rgba(245, 245, 245, 0.747);
 }
 
+.book-header {
+  display: flex;
+  align-items:flex-end;
+  gap: 0px;   /* space between title and genre */
+}
+
+.bookdetails-h2
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
 .book-author {
     font-size : 1em;
     margin-bottom : 10px;
-    color : white;
+    margin : 5px;
+    color : brown ;
 }
 
 .book-description {
     font-size : 1em;
     margin-bottom : 10px;
-    color : white;
+    color : orangered;
+    margin : 5px;
 }
 
 .book-year {
     font-size : 1em;
-    margin-bottom : 10px;
-    color : white;
+    color : rgb(61, 47, 255);
 }
 
-.bookList {
+.book-genre {
+    font-size : 1rem;
+}
+
+.book-rating {
+    color : aqua;  
+}
+
+.book-page {
+    color : rgb(119, 0, 255);
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+.book-price {
+    color : rgba(229, 255, 0, 0.808);
     display : flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
+.book-summary{
+    color : purple;
+}
 .search {
     display: flex;
     flex-direction: column;
@@ -69,10 +137,30 @@
     align-items: center;
     margin : 10px;
 }
-
 .search-input {
     width : 400px;
     margin : 20px;
     justify-content: center;
     align-items: center;
 }
+
+.search-button {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 217, 0, 0.329);
+}
+
+.title.link{
+    color : purple;
+}
+
+.cart-list {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap : 40px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
