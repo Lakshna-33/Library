@@ -21,7 +21,7 @@ function Header() {
             <li>BrowseBooks</li></Link> 
 
             <Link className ="li" to= "/cartpage">
-            <li>Cart{cartItems.length}</li></Link>
+            <li>Cart({cartItems.length})</li></Link>
            
           </ul>
         
